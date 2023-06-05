@@ -1,0 +1,174 @@
+Mon Jun 05 21:04:18 UTC 2023 - Executing "openroad -exit -no_init -python /openlane/scripts/odbpy/lefutil.py get_metal_layers -o /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/layers.list /pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+
+Mon Jun 05 21:04:18 UTC 2023 - Executing "/openlane/scripts/mergeLef.py -o /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/merged.nom.lef -i /pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Mon Jun 05 21:04:18 UTC 2023 - Executing "/openlane/scripts/mergeLef.py -o /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/merged.min.lef -i /pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Mon Jun 05 21:04:18 UTC 2023 - Executing "/openlane/scripts/mergeLef.py -o /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/merged.max.lef -i /pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Mon Jun 05 21:04:18 UTC 2023 - Executing "python3 /openlane/scripts/mergeLib.py --output /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/synthesis/merged.lib --name sky130A_merged /pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Mon Jun 05 21:04:19 UTC 2023 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/synthesis/trimmed.lib.exclude.list --output /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/synthesis/trimmed.lib /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/synthesis/merged.lib"
+
+Mon Jun 05 21:04:19 UTC 2023 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/cts/cts.lib.exclude.list --output /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/cts/cts.lib /pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Mon Jun 05 21:04:19 UTC 2023 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/cts/cts-fastest.lib.exclude.list --output /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/cts/cts-fastest.lib /pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
+
+Mon Jun 05 21:04:20 UTC 2023 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/cts/cts-slowest.lib.exclude.list --output /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/cts/cts-slowest.lib /pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
+
+Mon Jun 05 21:04:20 UTC 2023 - Executing "python3 /openlane/scripts/new_tracks.py -i /pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/routing/config.tracks"
+
+Mon Jun 05 21:04:20 UTC 2023 - Executing "echo {OpenLane e910d115dc75c51407f652330bce8ed997c45946} > /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/OPENLANE_VERSION"
+
+Mon Jun 05 21:04:21 UTC 2023 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Mon Jun 05 21:04:21 UTC 2023 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/synthesis/trimmed.lib > /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/synthesis/1-trimmed.no_pg.lib"
+
+Mon Jun 05 21:04:21 UTC 2023 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/synthesis/1-synthesis.log"
+
+Mon Jun 05 21:07:24 UTC 2023 - Executing "sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/hosni\/AES\/caravel_aes_example\/openlane\/aes_example\/runs\/23_06_05_14_04\/results\/synthesis\/aes_example.v/} /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/config.tcl"
+
+Mon Jun 05 21:07:24 UTC 2023 - Executing "sed -i.bak /defparam/d /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/results/synthesis/aes_example.v"
+
+Mon Jun 05 21:07:25 UTC 2023 - Executing "sta -exit -no_init /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/synthesis/2-sta.log"
+
+Mon Jun 05 21:07:28 UTC 2023 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/synthesis/2-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Mon Jun 05 21:07:28 UTC 2023 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/synthesis/trimmed.lib > /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/synthesis/2-trimmed.no_pg.lib"
+
+Mon Jun 05 21:07:28 UTC 2023 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl |& tee /dev/null /dev/null"
+
+Mon Jun 05 21:10:32 UTC 2023 - Executing "sed -i.bak /defparam/d /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/synthesis/pg_define.v"
+
+Mon Jun 05 21:10:32 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/floorplan.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/floorplan/3-initial_fp.log"
+
+Mon Jun 05 21:10:33 UTC 2023 - Executing "openroad -exit -no_init -python /openlane/scripts/odbpy/defutil.py extract_core_dims --output-data /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/dimensions.txt --input-lef /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/merged.nom.lef /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/floorplan/3-initial_fp.def"
+
+Mon Jun 05 21:10:34 UTC 2023 - Executing "openroad -exit -no_init -python /openlane/scripts/odbpy/io_place.py --config /home/hosni/AES/caravel_aes_example/openlane/aes_example/pin_order.cfg --hor-layer met3 --ver-layer met2 --ver-width-mult 2 --hor-width-mult 2 --hor-extension 0 --ver-extension 0 --length 4 --unmatched-error --input-lef /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/merged.nom.lef --output-def /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/floorplan/4-io.def --output /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/floorplan/4-io.odb /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/floorplan/3-initial_fp.odb |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/floorplan/4-place_io.log"
+
+Mon Jun 05 21:10:34 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/tapcell.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/floorplan/5-tap.log"
+
+Mon Jun 05 21:10:35 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/pdn.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/floorplan/6-pdn.log"
+
+Mon Jun 05 21:10:37 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/gpl.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/placement/7-global.log"
+
+Mon Jun 05 21:11:22 UTC 2023 - Executing "sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/hosni\/AES\/caravel_aes_example\/openlane\/aes_example\/runs\/23_06_05_14_04\/tmp\/placement\/7-global.nl.v/} /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/config.tcl"
+
+Mon Jun 05 21:11:22 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/placement/8-gpl_sta.log"
+
+Mon Jun 05 21:11:30 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/resizer.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/placement/9-resizer.log"
+
+Mon Jun 05 21:11:45 UTC 2023 - Executing "sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/hosni\/AES\/caravel_aes_example\/openlane\/aes_example\/runs\/23_06_05_14_04\/tmp\/placement\/9-resizer.nl.v/} /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/config.tcl"
+
+Mon Jun 05 21:11:45 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/dpl.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/placement/10-detailed.log"
+
+Mon Jun 05 21:11:47 UTC 2023 - Executing "sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/hosni\/AES\/caravel_aes_example\/openlane\/aes_example\/runs\/23_06_05_14_04\/results\/placement\/aes_example.nl.v/} /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/config.tcl"
+
+Mon Jun 05 21:11:47 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/placement/11-dpl_sta.log"
+
+Mon Jun 05 21:11:52 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/cts.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/cts/12-cts.log"
+
+Mon Jun 05 21:12:31 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/cts/13-cts_sta.log"
+
+Mon Jun 05 21:12:40 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/resizer_timing.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/cts/14-resizer.log"
+
+Mon Jun 05 21:15:14 UTC 2023 - Executing "sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/hosni\/AES\/caravel_aes_example\/openlane\/aes_example\/runs\/23_06_05_14_04\/tmp\/cts\/14-aes_example.resized.nl.v/} /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/config.tcl"
+
+Mon Jun 05 21:15:14 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/resizer_routing_design.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/routing/15-resizer_design.log"
+
+Mon Jun 05 21:16:01 UTC 2023 - Executing "sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/hosni\/AES\/caravel_aes_example\/openlane\/aes_example\/runs\/23_06_05_14_04\/tmp\/15-aes_example.nl.v/} /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/config.tcl"
+
+Mon Jun 05 21:16:01 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/routing/16-rsz_design_sta.log"
+
+Mon Jun 05 21:16:12 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/resizer_routing_timing.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/routing/17-resizer_timing.log"
+
+Mon Jun 05 21:22:20 UTC 2023 - Executing "sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/hosni\/AES\/caravel_aes_example\/openlane\/aes_example\/runs\/23_06_05_14_04\/tmp\/17-aes_example.nl.v/} /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/config.tcl"
+
+Mon Jun 05 21:22:20 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/routing/18-rsz_timing_sta.log"
+
+Mon Jun 05 21:22:31 UTC 2023 - Executing "openroad -exit -no_init -python /openlane/scripts/odbpy/diodes.py place --diode-cell sky130_fd_sc_hd__diode_2 --diode-pin DIODE --threshold 110 --side-strategy source --port-protect none --input-lef /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/merged.nom.lef --output-def /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/routing/19-diodes.def --output /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/routing/19-diodes.odb /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/17-aes_example.odb |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/routing/19-diodes.log"
+
+Mon Jun 05 21:22:33 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/dpl.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/routing/20-diode_legalization.log"
+
+Mon Jun 05 21:22:35 UTC 2023 - Executing "sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/hosni\/AES\/caravel_aes_example\/openlane\/aes_example\/runs\/23_06_05_14_04\/tmp\/routing\/.\/19-diodes_legalized.nl.v/} /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/config.tcl"
+
+Mon Jun 05 21:22:35 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/groute.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/routing/21-global.log"
+
+Mon Jun 05 21:22:54 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/write_views.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/routing/21-global_write_netlist.log"
+
+Mon Jun 05 21:22:55 UTC 2023 - Executing "sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/hosni\/AES\/caravel_aes_example\/openlane\/aes_example\/runs\/23_06_05_14_04\/tmp\/routing\/global.nl.v/} /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/config.tcl"
+
+Mon Jun 05 21:22:56 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/routing/23-grt_sta.log"
+
+Mon Jun 05 21:23:05 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/fill.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/routing/24-fill.log"
+
+Mon Jun 05 21:23:07 UTC 2023 - Executing "sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/hosni\/AES\/caravel_aes_example\/openlane\/aes_example\/runs\/23_06_05_14_04\/tmp\/routing\/24-fill.nl.v/} /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/config.tcl"
+
+Mon Jun 05 21:23:07 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/droute.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/routing/25-detailed.log"
+
+Mon Jun 05 21:33:30 UTC 2023 - Executing "sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/hosni\/AES\/caravel_aes_example\/openlane\/aes_example\/runs\/23_06_05_14_04\/results\/routing\/aes_example.nl.v/} /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/config.tcl"
+
+Mon Jun 05 21:33:30 UTC 2023 - Executing "python3 /openlane/scripts/drc_rosetta.py tr to_klayout -o /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/routing/drt.klayout.xml --design-name aes_example /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/routing/drt.drc"
+
+Mon Jun 05 21:33:30 UTC 2023 - Executing "openroad -exit -no_init -python /openlane/scripts/odbpy/wire_lengths.py --report-out /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/routing/26-wire_lengths.csv --input-lef /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/merged.nom.lef --output-def /dev/null --output /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/results/routing/aes_example.odb /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/results/routing/aes_example.odb |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/routing/26-wire_lengths.log"
+
+Mon Jun 05 21:33:32 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/27-parasitics_extraction.min.log"
+
+Mon Jun 05 21:33:46 UTC 2023 - Executing "sta -exit -no_init /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/28-rcx_mcsta.min.log"
+
+Mon Jun 05 21:34:41 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/29-parasitics_extraction.max.log"
+
+Mon Jun 05 21:34:55 UTC 2023 - Executing "sta -exit -no_init /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/30-rcx_mcsta.max.log"
+
+Mon Jun 05 21:35:52 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/31-parasitics_extraction.nom.log"
+
+Mon Jun 05 21:36:07 UTC 2023 - Executing "sta -exit -no_init /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/32-rcx_mcsta.nom.log"
+
+Mon Jun 05 21:37:02 UTC 2023 - Executing "sta -exit -no_init /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/33-rcx_sta.log"
+
+Mon Jun 05 21:37:16 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/irdrop.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/34-irdrop.log"
+
+Mon Jun 05 21:37:22 UTC 2023 - Executing "magic -noconsole -dnull -rcfile /pdk/sky130A/libs.tech/magic/sky130A.magicrc < /openlane/scripts/magic/wrapper.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/35-gdsii.log"
+
+Mon Jun 05 21:37:56 UTC 2023 - Executing "magic -noconsole -dnull -rcfile /pdk/sky130A/libs.tech/magic/sky130A.magicrc < /openlane/scripts/magic/wrapper.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/35-gds_ptrs.log"
+
+Mon Jun 05 21:38:15 UTC 2023 - Executing "sed -i.bak -n {/^<< properties >>/,/^<< end >>/p} /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/signoff/gds_ptrs.mag"
+
+Mon Jun 05 21:38:15 UTC 2023 - Executing "magic -noconsole -dnull -rcfile /pdk/sky130A/libs.tech/magic/sky130A.magicrc < /openlane/scripts/magic/wrapper.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/35-lef.log"
+
+Mon Jun 05 21:39:06 UTC 2023 - Executing "magic -noconsole -dnull -rcfile /pdk/sky130A/libs.tech/magic/sky130A.magicrc < /openlane/scripts/magic/wrapper.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/35-maglef.log"
+
+Mon Jun 05 21:39:06 UTC 2023 - Executing "python3 /openlane/scripts/klayout/stream_out.py --output /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/results/signoff/aes_example.klayout.gds --lyt /pdk/sky130A/libs.tech/klayout/tech/sky130A.lyt --lym /pdk/sky130A/libs.tech/klayout/tech/sky130A.map --lyp /pdk/sky130A/libs.tech/klayout/tech/sky130A.lyp --top aes_example --with-gds-file /pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds --input-lef /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/merged.nom.lef /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/results/routing/aes_example.def |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/36-gdsii-klayout.log"
+
+Mon Jun 05 21:39:11 UTC 2023 - Executing "klayout -b -r /openlane/scripts/klayout/xor.drc -rd a=/home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/results/signoff/aes_example.gds -rd b=/home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/results/signoff/aes_example.klayout.gds -rd jobs=1 -rd rdb_out=/home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/37-xor.xml -rd ignore=81/14 -rd rpt_out=/home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/37-xor.rpt |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/37-xor.log"
+
+Mon Jun 05 21:40:02 UTC 2023 - Executing "magic -noconsole -dnull -rcfile /pdk/sky130A/libs.tech/magic/sky130A.magicrc < /openlane/scripts/magic/wrapper.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/38-spice.log"
+
+Mon Jun 05 21:41:26 UTC 2023 - Executing "openroad -exit -no_init -python /openlane/scripts/odbpy/power_utils.py write_powered_def --output /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/signoff/38-aes_example.p.def --input-lef /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/merged.nom.lef --power-port VPWR --ground-port VGND --powered-netlist /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/synthesis/pg_define.v /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/results/routing/aes_example.def |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/39-write_powered_def.log"
+
+Mon Jun 05 21:41:31 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/write_views.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/39-write_powered_verilog.log"
+
+Mon Jun 05 21:41:37 UTC 2023 - Executing "sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/hosni\/AES\/caravel_aes_example\/openlane\/aes_example\/runs\/23_06_05_14_04\/tmp\/signoff\/38-aes_example.nl.v/} /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/config.tcl"
+
+Mon Jun 05 21:41:37 UTC 2023 - Executing "netgen -batch source /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/signoff/41-setup_file.lef.lvs |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/41-lvs.lef.log"
+
+Mon Jun 05 21:41:50 UTC 2023 - Executing "magic -noconsole -dnull -rcfile /pdk/sky130A/libs.tech/magic/sky130A.magicrc < /openlane/scripts/magic/wrapper.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/42-drc.log"
+
+Mon Jun 05 21:47:59 UTC 2023 - Executing "python3 /openlane/scripts/drc_rosetta.py magic to_tcl -o /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/drc.tcl /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/drc.rpt"
+
+Mon Jun 05 21:47:59 UTC 2023 - Executing "python3 /openlane/scripts/drc_rosetta.py magic to_tr -o /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/drc.tr /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/drc.rpt"
+
+Mon Jun 05 21:47:59 UTC 2023 - Executing "python3 /openlane/scripts/drc_rosetta.py tr to_klayout -o /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/drc.klayout.xml --design-name aes_example /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/drc.tr"
+
+Mon Jun 05 21:47:59 UTC 2023 - Executing "python3 /openlane/scripts/drc_rosetta.py magic to_rdb -o /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/drc.rdb /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/drc.rpt"
+
+Mon Jun 05 21:48:00 UTC 2023 - Executing "openroad -exit /openlane/scripts/openroad/antenna_check.tcl |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/43-antenna.log"
+
+Mon Jun 05 21:48:07 UTC 2023 - Executing "python3 /openlane/scripts/extract_antenna_violators.py --output /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/43-antenna_violators.rpt /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/43-antenna.log"
+
+Mon Jun 05 21:48:07 UTC 2023 - Executing "awk -v vdd=VPWR -v gnd=VGND -f /pdk/sky130A/libs.tech/openlane/cvc/power.awk /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/signoff/38-aes_example.nl.v > /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/signoff/aes_example.power"
+
+Mon Jun 05 21:48:07 UTC 2023 - Executing "awk -f /pdk/sky130A/libs.tech/openlane/cvc/cdl.awk /pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/results/signoff/aes_example.lef.spice > /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/signoff/aes_example.cdl"
+
+Mon Jun 05 21:48:08 UTC 2023 - Executing "cvc_rv /pdk/sky130A/libs.tech/openlane/cvc/cvcrc |& tee /dev/null /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/44-erc_screen.log"
+
