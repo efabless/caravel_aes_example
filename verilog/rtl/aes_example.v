@@ -40,8 +40,8 @@
 
 module aes_example (
 `ifdef USE_POWER_PINS
-    inout vccd1,	// User area 1 1.8V supply
-    inout vssd1,	// User area 1 digital ground
+    inout VPWR,
+    inout VGND,
 `endif
 
     // Wishbone Slave ports (WB MI A)
