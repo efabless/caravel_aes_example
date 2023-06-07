@@ -1,19 +1,19 @@
 Design Name: aes_example
-Run Directory: /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04
+Run Directory: /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_07_06_18
 ----------------------------------------
 
 Magic DRC Summary:
-Source: /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/drc.rpt
+Source: /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_07_06_18/reports/signoff/drc.rpt
 Total Magic DRC violations is 0
 ----------------------------------------
 
 LVS Summary:
-Source: /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/41-aes_example.lef.lvs.log
-Number of nets: 24278                      |Number of nets: 24278                      
+Source: /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_07_06_18/logs/signoff/41-aes_example.lef.lvs.log
+Number of nets: 24392                      |Number of nets: 24392                      
 Design is LVS clean.
 ----------------------------------------
 
 Antenna Summary:
-Source: /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/logs/signoff/43-antenna.log
-Pin violations: 7
-Net violations: 7
+Source: /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_07_06_18/logs/signoff/43-antenna.log
+Pin violations: 8
+Net violations: 8

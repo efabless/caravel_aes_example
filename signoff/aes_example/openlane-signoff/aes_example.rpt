@@ -1,17 +1,17 @@
-CVC: Log output to /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/aes_example.rpt
-CVC: Error output to /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/aes_example.rpt.error.gz
-CVC: Debug output to /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/aes_example.rpt.debug.gz
+CVC: Log output to /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_07_06_18/reports/signoff/aes_example.rpt
+CVC: Error output to /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_07_06_18/reports/signoff/aes_example.rpt.error.gz
+CVC: Debug output to /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_07_06_18/reports/signoff/aes_example.rpt.debug.gz
 CVC: Circuit Validation Check  Version 1.1.4
-CVC: Start: Mon Jun  5 21:48:08 2023
+CVC: Start: Wed Jun  7 14:02:19 2023
 
 Using the following parameters for CVC (Circuit Validation Check) from /pdk/sky130A/libs.tech/openlane/cvc/cvcrc
 CVC_TOP = 'aes_example'
-CVC_NETLIST = '/home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/signoff/aes_example.cdl'
+CVC_NETLIST = '/home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_07_06_18/tmp/signoff/aes_example.cdl'
 CVC_MODE = 'aes_example'
 CVC_MODEL_FILE = '/pdk/sky130A/libs.tech/openlane/cvc/models'
-CVC_POWER_FILE = '/home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/signoff/aes_example.power'
+CVC_POWER_FILE = '/home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_07_06_18/tmp/signoff/aes_example.power'
 CVC_FUSE_FILE = ''
-CVC_REPORT_FILE = '/home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/reports/signoff/aes_example.rpt'
+CVC_REPORT_FILE = '/home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_07_06_18/reports/signoff/aes_example.rpt'
 CVC_REPORT_TITLE = 'CVC $CVC_TOP'
 CVC_CIRCUIT_ERROR_LIMIT = '100'
 CVC_SEARCH_LIMIT = '100'
@@ -45,7 +45,7 @@ End of parameters
 
 CVC: Reading device model settings...
 CVC: Reading power settings...
-CVC: Parsing netlist /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_05_14_04/tmp/signoff/aes_example.cdl
-Cdl fixed data size 1904663
-Usage CDL: Time: 0  Memory: 90384  I/O: 8  Swap: 0
+CVC: Parsing netlist /home/hosni/AES/caravel_aes_example/openlane/aes_example/runs/23_06_07_06_18/tmp/signoff/aes_example.cdl
+Cdl fixed data size 1904535
+Usage CDL: Time: 0  Memory: 94164  I/O: 8  Swap: 0
 CVC: Counting and linking...

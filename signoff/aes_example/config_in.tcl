@@ -9,7 +9,7 @@ set ::env(VERILOG_FILES) "/home/hosni/AES/caravel_aes_example/openlane/aes_examp
 set ::env(SYNTH_USE_PG_PINS_DEFINES) "USE_POWER_PINS"
 set ::env(RUN_VERILATOR) "0"
 set ::env(SYNTH_BUFFERING) "0"
-set ::env(SYNTH_MAX_TRAN) "1.0"
+set ::env(SYNTH_MAX_TRAN) "0.8"
 set ::env(SYNTH_MAX_FANOUT) "16"
 set ::env(CLOCK_PERIOD) "25"
 set ::env(CLOCK_PORT) "wb_clk_i"

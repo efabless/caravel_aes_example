@@ -1,0 +1,536 @@
+OpenROAD 9a713f0e8a51769207918da28adfd3c02b854375 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+pdk(libs) defined as:
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hvl/lib/sky130_fd_sc_hvl__tt_025C_3v30.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hvl/lib/sky130_fd_sc_hvl__tt_025C_3v30_lv1v80.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_fd_io__top_gpiov2_tt_tt_025C_1v80_3v30.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_tt_025C_1v80_3v30_3v30.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_tt_025C_1v80_3v30.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_tt_025C_1v80_3v30_3v30.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_fd_io__top_xres4v2_tt_tt_025C_1v80_3v30.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_tt_025C_1v80_3v30.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_tt_025C_1v80_3v30_3v30.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_025C_1v80_3v30.lib
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib
+pdk(lefs) defined as:
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hvl/techlef/sky130_fd_sc_hvl__min.tlef
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lef/sky130_fd_io.lef
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lef/sky130_ef_io.lef
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hvl/lef/sky130_fd_sc_hvl.lef
+/home/hosni/AES/pdk//sky130A/libs.ref//sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef
+verilog exception: /home/hosni/AES/caravel/verilog/gl/__user_analog_project_wrapper.v
+removing /home/hosni/AES/caravel/verilog/gl/__user_analog_project_wrapper.v from verilogs list
+verilog exception: /home/hosni/AES/caravel/verilog/gl/caravel-signoff.v
+removing /home/hosni/AES/caravel/verilog/gl/caravel-signoff.v from verilogs list
+verilog exception: /home/hosni/AES/caravel/verilog/gl/caravan-signoff.v
+removing /home/hosni/AES/caravel/verilog/gl/caravan-signoff.v from verilogs list
+verilog exception: /home/hosni/AES/caravel/verilog/gl/__user_project_wrapper.v
+removing /home/hosni/AES/caravel/verilog/gl/__user_project_wrapper.v from verilogs list
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hvl/lib/sky130_fd_sc_hvl__tt_025C_3v30.lib
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hvl/lib/sky130_fd_sc_hvl__tt_025C_3v30_lv1v80.lib
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_fd_io__top_gpiov2_tt_tt_025C_1v80_3v30.lib
+[WARNING STA-0163] /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_tt_tt_025C_1v80_3v30.lib line 33, default_fanout_load is 0.0.
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_tt_025C_1v80_3v30_3v30.lib
+[WARNING STA-0163] /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_tt_025C_1v80_3v30_3v30.lib line 42, default_fanout_load is 0.0.
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_tt_025C_1v80_3v30.lib
+[WARNING STA-0163] /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_tt_025C_1v80_3v30.lib line 43, default_fanout_load is 0.0.
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_tt_025C_1v80_3v30_3v30.lib
+[WARNING STA-0163] /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_tt_025C_1v80_3v30_3v30.lib line 42, default_fanout_load is 0.0.
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_fd_io__top_xres4v2_tt_tt_025C_1v80_3v30.lib
+[WARNING STA-0163] /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_tt_tt_025C_1v80_3v30.lib line 33, default_fanout_load is 0.0.
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib
+[WARNING STA-0163] /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib line 33, default_fanout_load is 0.0.
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib
+[WARNING STA-0163] /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib line 42, default_fanout_load is 0.0.
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib
+[WARNING STA-0163] /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib line 42, default_fanout_load is 0.0.
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib
+[WARNING STA-0163] /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib line 42, default_fanout_load is 0.0.
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib
+[WARNING STA-0163] /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib line 42, default_fanout_load is 0.0.
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib
+[WARNING STA-0163] /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib line 42, default_fanout_load is 0.0.
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_tt_025C_1v80_3v30.lib
+[WARNING STA-0163] /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_tt_025C_1v80_3v30.lib line 43, default_fanout_load is 0.0.
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_tt_025C_1v80_3v30_3v30.lib
+[WARNING STA-0163] /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_tt_025C_1v80_3v30_3v30.lib line 42, default_fanout_load is 0.0.
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_025C_1v80_3v30.lib
+[WARNING STA-0163] /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_025C_1v80_3v30.lib line 43, default_fanout_load is 0.0.
+exec> read_liberty /home/hosni/AES/pdk//sky130A/libs.ref//sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib
+exec> read_lef /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef
+exec> read_lef /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hvl/techlef/sky130_fd_sc_hvl__min.tlef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_sc_hvl/techlef/sky130_fd_sc_hvl__min.tlef
+[WARNING ODB-0217] duplicate VIARULE (L1M1_PR) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (L1M1_PR_R) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (L1M1_PR_M) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (L1M1_PR_MR) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (L1M1_PR_C) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M1M2_PR) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M1M2_PR_R) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M1M2_PR_M) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M1M2_PR_MR) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M1M2_PR_C) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M2M3_PR) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M2M3_PR_R) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M2M3_PR_M) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M2M3_PR_MR) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M2M3_PR_C) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M3M4_PR) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M3M4_PR_R) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M3M4_PR_M) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M3M4_PR_MR) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M3M4_PR_C) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M4M5_PR) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M4M5_PR_R) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M4M5_PR_M) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M4M5_PR_MR) ignoring...
+[WARNING ODB-0217] duplicate VIARULE (M4M5_PR_C) ignoring...
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_sc_hvl/techlef/sky130_fd_sc_hvl__min.tlef
+exec> read_lef /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0225]     Created 437 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+exec> read_lef /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lef/sky130_fd_io.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef at line 2.
+
+[INFO ODB-0225]     Created 22 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef
+exec> read_lef /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef at line 2.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef at line 142.
+
+[INFO ODB-0225]     Created 4 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef
+exec> read_lef /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_io/lef/sky130_ef_io.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lef/sky130_ef_io.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lef/sky130_ef_io.lef at line 2.
+
+[INFO ODB-0225]     Created 37 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_io/lef/sky130_ef_io.lef
+exec> read_lef /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hvl/lef/sky130_fd_sc_hvl.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_sc_hvl/lef/sky130_fd_sc_hvl.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_sc_hvl/lef/sky130_fd_sc_hvl.lef at line 2.
+
+[INFO ODB-0225]     Created 69 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/pdk/sky130A/libs.ref/sky130_fd_sc_hvl/lef/sky130_fd_sc_hvl.lef
+exec> read_lef /home/hosni/AES/pdk//sky130A/libs.ref//sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/pdk/sky130A/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/pdk/sky130A/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef
+exec> read_lef /home/hosni/AES/pdk//sky130A/libs.ref//sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef
+[WARNING ODB-0229] Error: library (sky130_sram_2kbyte_1rw1r_32x512_8) already exists
+exec> read_lef /home/hosni/AES/caravel/lef/caravan_logo-stub.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/caravan_logo-stub.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/caravan_logo-stub.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/caravan_logo-stub.lef
+exec> read_lef /home/hosni/AES/caravel/lef/mprj_logic_high.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/mprj_logic_high.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/mprj_logic_high.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/mprj_logic_high.lef
+exec> read_lef /home/hosni/AES/caravel/lef/buff_flash_clkrst.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/buff_flash_clkrst.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/buff_flash_clkrst.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/buff_flash_clkrst.lef
+exec> read_lef /home/hosni/AES/caravel/lef/user_id_programming.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/user_id_programming.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/user_id_programming.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/user_id_programming.lef
+exec> read_lef /home/hosni/AES/caravel/lef/copyright_block-stub.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/copyright_block-stub.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/copyright_block-stub.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/copyright_block-stub.lef
+exec> read_lef /home/hosni/AES/caravel/lef/housekeeping_alt-openlane.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/housekeeping_alt-openlane.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/housekeeping_alt-openlane.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/housekeeping_alt-openlane.lef
+exec> read_lef /home/hosni/AES/caravel/lef/mgmt_protect-openlane.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/mgmt_protect-openlane.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/mgmt_protect-openlane.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/mgmt_protect-openlane.lef
+exec> read_lef /home/hosni/AES/caravel/lef/gpio_signal_buffering_alt.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/gpio_signal_buffering_alt.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/gpio_signal_buffering_alt.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/gpio_signal_buffering_alt.lef
+exec> read_lef /home/hosni/AES/caravel/lef/user_analog_project_wrapper_empty.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/user_analog_project_wrapper_empty.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/user_analog_project_wrapper_empty.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/user_analog_project_wrapper_empty.lef
+exec> read_lef /home/hosni/AES/caravel/lef/digital_pll.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/digital_pll.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/digital_pll.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/digital_pll.lef
+exec> read_lef /home/hosni/AES/caravel/lef/caravan_motto-stub.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/caravan_motto-stub.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/caravan_motto-stub.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/caravan_motto-stub.lef
+exec> read_lef /home/hosni/AES/caravel/lef/caravel_logo-stub.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/caravel_logo-stub.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/caravel_logo-stub.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/caravel_logo-stub.lef
+exec> read_lef /home/hosni/AES/caravel/lef/gpio_defaults_block.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/gpio_defaults_block.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/gpio_defaults_block.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/gpio_defaults_block.lef
+exec> read_lef /home/hosni/AES/caravel/lef/constant_block.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/constant_block.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/constant_block.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/constant_block.lef
+exec> read_lef /home/hosni/AES/caravel/lef/user_id_textblock-stub.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/user_id_textblock-stub.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/user_id_textblock-stub.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/user_id_textblock-stub.lef
+exec> read_lef /home/hosni/AES/caravel/lef/housekeeping.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/housekeeping.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/housekeeping.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/housekeeping.lef
+exec> read_lef /home/hosni/AES/caravel/lef/caravan_core.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/caravan_core.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/caravan_core.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/caravan_core.lef
+exec> read_lef /home/hosni/AES/caravel/lef/gpio_control_block.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/gpio_control_block.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/gpio_control_block.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/gpio_control_block.lef
+exec> read_lef /home/hosni/AES/caravel/lef/caravan_signal_routing.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/caravan_signal_routing.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/caravan_signal_routing.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/caravan_signal_routing.lef
+exec> read_lef /home/hosni/AES/caravel/lef/chip_io_alt.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/chip_io_alt.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/chip_io_alt.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/chip_io_alt.lef
+exec> read_lef /home/hosni/AES/caravel/lef/mgmt_protect.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/mgmt_protect.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/mgmt_protect.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/mgmt_protect.lef
+exec> read_lef /home/hosni/AES/caravel/lef/gpio_logic_high.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/gpio_logic_high.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/gpio_logic_high.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/gpio_logic_high.lef
+exec> read_lef /home/hosni/AES/caravel/lef/user_project_wrapper.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/user_project_wrapper.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/user_project_wrapper.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/user_project_wrapper.lef
+exec> read_lef /home/hosni/AES/caravel/lef/caravel_power_routing.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/caravel_power_routing.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/caravel_power_routing.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/caravel_power_routing.lef
+exec> read_lef /home/hosni/AES/caravel/lef/caravel_motto-stub.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/caravel_motto-stub.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/caravel_motto-stub.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/caravel_motto-stub.lef
+exec> read_lef /home/hosni/AES/caravel/lef/spare_logic_block.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/spare_logic_block.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/spare_logic_block.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/spare_logic_block.lef
+exec> read_lef /home/hosni/AES/caravel/lef/housekeeping_alt.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/housekeeping_alt.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/housekeeping_alt.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/housekeeping_alt.lef
+exec> read_lef /home/hosni/AES/caravel/lef/caravel_core.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/caravel_core.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/caravel_core.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/caravel_core.lef
+exec> read_lef /home/hosni/AES/caravel/lef/xres_buf.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/xres_buf.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/xres_buf.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/xres_buf.lef
+exec> read_lef /home/hosni/AES/caravel/lef/caravel.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/caravel.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/caravel.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/caravel.lef
+exec> read_lef /home/hosni/AES/caravel/lef/empty_macro_1.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/empty_macro_1.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/empty_macro_1.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/empty_macro_1.lef
+exec> read_lef /home/hosni/AES/caravel/lef/caravel_clocking.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/caravel_clocking.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/caravel_clocking.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/caravel_clocking.lef
+exec> read_lef /home/hosni/AES/caravel/lef/gpio_signal_buffering.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/gpio_signal_buffering.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/gpio_signal_buffering.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/gpio_signal_buffering.lef
+exec> read_lef /home/hosni/AES/caravel/lef/simple_por.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/simple_por.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/simple_por.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/simple_por.lef
+exec> read_lef /home/hosni/AES/caravel/lef/copyright_block_a-stub.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/copyright_block_a-stub.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/copyright_block_a-stub.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/copyright_block_a-stub.lef
+exec> read_lef /home/hosni/AES/caravel/lef/empty_macro.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/empty_macro.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/empty_macro.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/empty_macro.lef
+exec> read_lef /home/hosni/AES/caravel/lef/caravan.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/caravan.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/caravan.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/caravan.lef
+exec> read_lef /home/hosni/AES/caravel/lef/open_source-stub.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/open_source-stub.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/open_source-stub.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/open_source-stub.lef
+exec> read_lef /home/hosni/AES/caravel/lef/manual_power_connections.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/manual_power_connections.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/manual_power_connections.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/manual_power_connections.lef
+exec> read_lef /home/hosni/AES/caravel/lef/mgmt_protect_hv.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/mgmt_protect_hv.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/mgmt_protect_hv.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/mgmt_protect_hv.lef
+exec> read_lef /home/hosni/AES/caravel/lef/mprj_io_buffer.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/mprj_io_buffer.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/mprj_io_buffer.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/mprj_io_buffer.lef
+exec> read_lef /home/hosni/AES/caravel/lef/mprj2_logic_high.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/mprj2_logic_high.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/mprj2_logic_high.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/mprj2_logic_high.lef
+exec> read_lef /home/hosni/AES/caravel/lef/user_project_wrapper_empty.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/user_project_wrapper_empty.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/user_project_wrapper_empty.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/user_project_wrapper_empty.lef
+exec> read_lef /home/hosni/AES/caravel/lef/user_analog_project_wrapper.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/user_analog_project_wrapper.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/user_analog_project_wrapper.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/user_analog_project_wrapper.lef
+exec> read_lef /home/hosni/AES/caravel/lef/chip_io.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/chip_io.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/chip_io.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/chip_io.lef
+exec> read_lef /home/hosni/AES/caravel/lef/caravan_power_routing.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel/lef/caravan_power_routing.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel/lef/caravan_power_routing.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel/lef/caravan_power_routing.lef
+exec> read_lef /home/hosni/AES/caravel_mgmt_soc_litex/lef/mgmt_core_wrapper.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel_mgmt_soc_litex/lef/mgmt_core_wrapper.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel_mgmt_soc_litex/lef/mgmt_core_wrapper.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel_mgmt_soc_litex/lef/mgmt_core_wrapper.lef
+exec> read_lef /home/hosni/AES/caravel_mgmt_soc_litex/lef/RAM128.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel_mgmt_soc_litex/lef/RAM128.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel_mgmt_soc_litex/lef/RAM128.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel_mgmt_soc_litex/lef/RAM128.lef
+exec> read_lef /home/hosni/AES/caravel_mgmt_soc_litex/lef/RAM256.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel_mgmt_soc_litex/lef/RAM256.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel_mgmt_soc_litex/lef/RAM256.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel_mgmt_soc_litex/lef/RAM256.lef
+exec> read_lef /home/hosni/AES/caravel_aes_example/lef/user_project_wrapper.lef
+[WARNING ODB-0229] Error: library (user_project_wrapper) already exists
+exec> read_lef /home/hosni/AES/caravel_aes_example/lef/aes_example.lef
+[INFO ODB-0222] Reading LEF file: /home/hosni/AES/caravel_aes_example/lef/aes_example.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hosni/AES/caravel_aes_example/lef/aes_example.lef at line 2.
+
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/hosni/AES/caravel_aes_example/lef/aes_example.lef
+exec> read_def /home/hosni/AES/caravel_aes_example/def/aes_example.def
+[INFO ODB-0127] Reading DEF file: /home/hosni/AES/caravel_aes_example/def/aes_example.def
+[INFO ODB-0128] Design: aes_example
+[INFO ODB-0094] 		Created 100000 Insts
+[INFO ODB-0130]     Created 108 pins.
+[INFO ODB-0131]     Created 104610 components and 502665 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 400584 connections.
+[INFO ODB-0133]     Created 24418 nets and 102081 connections.
+[INFO ODB-0134] Finished DEF file: /home/hosni/AES/caravel_aes_example/def/aes_example.def
+exec> define_process_corner -ext_model_index 0 X
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+exec> extract_parasitics  -ext_model_file /home/hosni/AES/pdk//sky130A/libs.tech//openlane/rules.openrcx.sky130A.min.calibre  -lef_res
+[INFO RCX-0008] extracting parasitics of aes_example ...
+[INFO RCX-0435] Reading extraction model file /home/hosni/AES/pdk//sky130A/libs.tech//openlane/rules.openrcx.sky130A.min.calibre ...
+[INFO RCX-0436] RC segment generation aes_example (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 135096 rc segments
+[INFO RCX-0439] Coupling Cap extraction aes_example ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0043] 249694 wires to be extracted
+[INFO RCX-0442] 52% completion -- 131621 wires have been extracted
+[INFO RCX-0442] 100% completion -- 249694 wires have been extracted
+[INFO RCX-0045] Extract 24418 nets, 159484 rsegs, 159484 caps, 324146 ccs
+[INFO RCX-0015] Finished extracting aes_example.
+exec> write_spef /home/hosni/AES/caravel_aes_example/signoff/aes_example/openlane-signoff/spef/aes_example.min.spef
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 24418 nets finished
+[INFO RCX-0017] Finished writing SPEF ...
+exec> read_spef /home/hosni/AES/caravel_aes_example/signoff/aes_example/openlane-signoff/spef/aes_example.min.spef
+spef: /home/hosni/AES/caravel_aes_example/signoff/aes_example/openlane-signoff/spef/aes_example.min.spef
+def: /home/hosni/AES/caravel_aes_example/def/aes_example.def
+rcx: /home/hosni/AES/pdk//sky130A/libs.tech//openlane/rules.openrcx.sky130A.min.calibre
+rcx-corner: min
+lib-corner: t.tcl
+tech_lef: /home/hosni/AES/pdk//sky130A/libs.ref//sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef
