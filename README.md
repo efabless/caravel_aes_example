@@ -1,3 +1,3 @@
 # Caravel AES Example
 
-A user project example for caravel that uses https://github.com/secworks/aes
+caravel_user_project that has an AES accelerator connected on the WB bus. The HDL is taken https://github.com/secworks/aes

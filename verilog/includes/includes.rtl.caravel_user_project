@@ -1,5 +1,11 @@
 # Caravel user project includes
 -v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v	     
--v $(USER_PROJECT_VERILOG)/rtl/user_proj_example.v
-
- 
+-v $(USER_PROJECT_VERILOG)/rtl/user_defines.v
+-v $(USER_PROJECT_VERILOG)/rtl/aes_example.v
+-v $(USER_PROJECT_VERILOG)/../ips/aes/src/rtl/aes_core.v
+-v $(USER_PROJECT_VERILOG)/../ips/aes/src/rtl/aes_decipher_block.v
+-v $(USER_PROJECT_VERILOG)/../ips/aes/src/rtl/aes_encipher_block.v
+-v $(USER_PROJECT_VERILOG)/../ips/aes/src/rtl/aes_inv_sbox.v
+-v $(USER_PROJECT_VERILOG)/../ips/aes/src/rtl/aes_key_mem.v
+-v $(USER_PROJECT_VERILOG)/../ips/aes/src/rtl/aes_sbox.v
+-v $(USER_PROJECT_VERILOG)/../ips/aes/src/rtl/aes.v
