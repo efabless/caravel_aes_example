@@ -1,0 +1,4 @@
+
+Tests: 
+    - {name: decipher_test, sim: RTL}
+    - {name: encipher_test, sim: RTL}
