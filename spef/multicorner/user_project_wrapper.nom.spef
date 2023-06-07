@@ -1292,61 +1292,66 @@ wbs_sel_i[3] I
 wbs_stb_i I
 wbs_we_i I
 
-*D_NET *540 0.0070647
+*D_NET *540 0.00687421
 *CONN
 *P wb_clk_i I
 *I *646:wb_clk_i I *D aes_example
 *CAP
-1 wb_clk_i 0.00201891
-2 *646:wb_clk_i 0.00201891
-3 *646:wb_clk_i *646:wb_rst_i 0.00241732
-4 *646:wb_clk_i *646:wbs_ack_o 0.000457036
-5 *646:wb_clk_i *646:wbs_we_i 0.000152523
+1 wb_clk_i 0.00196706
+2 *646:wb_clk_i 0.00196706
+3 *646:wb_clk_i *646:wb_rst_i 0.00243906
+4 *646:wb_clk_i *646:wbs_ack_o 0.000353108
+5 *646:wb_clk_i *646:wbs_we_i 0.000147929
 *RES
 1 wb_clk_i *646:wb_clk_i 28.7484 
 *END
 
-*D_NET *541 0.007265
+*D_NET *541 0.00722254
 *CONN
 *P wb_rst_i I
 *I *646:wb_rst_i I *D aes_example
 *CAP
-1 wb_rst_i 0.00218827
-2 *646:wb_rst_i 0.00218827
-3 *646:wb_rst_i *646:wbs_ack_o 0.000152305
-4 *646:wb_rst_i *646:wbs_adr_i[0] 0
-5 *646:wb_rst_i *646:wbs_stb_i 0.000318838
-6 *646:wb_clk_i *646:wb_rst_i 0.00241732
+1 wb_rst_i 0.0020579
+2 *646:wb_rst_i 0.0020579
+3 *646:wb_rst_i *646:wbs_ack_o 0
+4 *646:wb_rst_i *646:wbs_cyc_i 0.00066768
+5 *646:wb_rst_i *646:wbs_dat_i[0] 0
+6 *646:wb_clk_i *646:wb_rst_i 0.00243906
 *RES
 1 wb_rst_i *646:wb_rst_i 29.0367 
 *END
 
-*D_NET *542 0.00731425
+*D_NET *542 0.00595288
 *CONN
 *P wbs_ack_o O
 *I *646:wbs_ack_o I *D aes_example
 *CAP
-1 wbs_ack_o 0.001955
-2 *646:wbs_ack_o 0.001955
-3 *646:wbs_ack_o *646:wbs_cyc_i 0.00279491
-4 *646:wbs_ack_o *646:wbs_dat_o[0] 0
-5 *646:wbs_ack_o *646:wbs_stb_i 0
-6 *646:wb_clk_i *646:wbs_ack_o 0.000457036
-7 *646:wb_rst_i *646:wbs_ack_o 0.000152305
+1 wbs_ack_o 0.00229531
+2 *646:wbs_ack_o 0.00229531
+3 *646:wbs_ack_o *646:wbs_adr_i[0] 0.00100915
+4 *646:wbs_ack_o *646:wbs_cyc_i 0
+5 *646:wbs_ack_o *646:wbs_dat_i[0] 0
+6 *646:wbs_ack_o *646:wbs_dat_o[0] 0
+7 *646:wb_clk_i *646:wbs_ack_o 0.000353108
+8 *646:wb_rst_i *646:wbs_ack_o 0
 *RES
 1 wbs_ack_o *646:wbs_ack_o 29.2529 
 *END
 
-*D_NET *543 0.008407
+*D_NET *543 0.0072801
 *CONN
 *P wbs_adr_i[0] I
 *I *646:wbs_adr_i[0] I *D aes_example
 *CAP
-1 wbs_adr_i[0] 0.00204208
-2 *646:wbs_adr_i[0] 0.00204208
-3 *646:wbs_adr_i[0] *646:wbs_sel_i[0] 0.00115438
-4 *646:wbs_adr_i[0] *646:wbs_we_i 0.00316846
-5 *646:wb_rst_i *646:wbs_adr_i[0] 0
+1 wbs_adr_i[0] 0.0022105
+2 *646:wbs_adr_i[0] 0.0022105
+3 *646:wbs_adr_i[0] *646:wbs_adr_i[1] 0.00161538
+4 *646:wbs_adr_i[0] *646:wbs_cyc_i 0
+5 *646:wbs_adr_i[0] *646:wbs_dat_i[1] 0.000123163
+6 *646:wbs_adr_i[0] *646:wbs_dat_o[0] 0
+7 *646:wbs_adr_i[0] *646:wbs_dat_o[1] 0.000111405
+8 *646:wbs_adr_i[0] *646:wbs_sel_i[1] 0
+9 *646:wbs_ack_o *646:wbs_adr_i[0] 0.00100915
 *RES
 1 wbs_adr_i[0] *646:wbs_adr_i[0] 30.1177 
 *END
@@ -1542,19 +1547,20 @@ wbs_we_i I
 1 wbs_adr_i[19] *646:wbs_adr_i[19] 44.0265 
 *END
 
-*D_NET *554 0.00919748
+*D_NET *554 0.00874503
 *CONN
 *P wbs_adr_i[1] I
 *I *646:wbs_adr_i[1] I *D aes_example
 *CAP
-1 wbs_adr_i[1] 0.00246409
-2 *646:wbs_adr_i[1] 0.00246409
+1 wbs_adr_i[1] 0.00251279
+2 *646:wbs_adr_i[1] 0.00251279
 3 *646:wbs_adr_i[1] *646:wbs_adr_i[2] 0.00033701
 4 *646:wbs_adr_i[1] *646:wbs_adr_i[3] 0
-5 *646:wbs_adr_i[1] *646:wbs_dat_i[0] 0.00236231
-6 *646:wbs_adr_i[1] *646:wbs_dat_i[2] 0.00156591
-7 *646:wbs_adr_i[1] *646:wbs_sel_i[1] 4.06573e-06
+5 *646:wbs_adr_i[1] *646:wbs_dat_i[2] 0.00156591
+6 *646:wbs_adr_i[1] *646:wbs_dat_o[1] 4.16907e-05
+7 *646:wbs_adr_i[1] *646:wbs_sel_i[1] 0.000159464
 8 *646:wbs_adr_i[1] *642:7 0
+9 *646:wbs_adr_i[0] *646:wbs_adr_i[1] 0.00161538
 *RES
 1 wbs_adr_i[1] *646:wbs_adr_i[1] 31.0545 
 *END
@@ -1754,18 +1760,17 @@ wbs_we_i I
 2 *564:11 *646:wbs_adr_i[29] 1.27679 
 *END
 
-*D_NET *565 0.0130139
+*D_NET *565 0.012983
 *CONN
 *P wbs_adr_i[2] I
 *I *646:wbs_adr_i[2] I *D aes_example
 *CAP
-1 wbs_adr_i[2] 0.00172903
-2 *646:wbs_adr_i[2] 0.00172903
-3 *646:wbs_adr_i[2] *646:wbs_dat_i[0] 5.7986e-05
-4 *646:wbs_adr_i[2] *646:wbs_dat_i[2] 0.00454668
-5 *646:wbs_adr_i[2] *646:wbs_dat_o[2] 0.00396261
-6 *646:wbs_adr_i[2] *646:wbs_sel_i[1] 0.000651552
-7 *646:wbs_adr_i[1] *646:wbs_adr_i[2] 0.00033701
+1 wbs_adr_i[2] 0.0017426
+2 *646:wbs_adr_i[2] 0.0017426
+3 *646:wbs_adr_i[2] *646:wbs_dat_i[2] 0.00454668
+4 *646:wbs_adr_i[2] *646:wbs_dat_o[2] 0.00396261
+5 *646:wbs_adr_i[2] *646:wbs_sel_i[1] 0.000651552
+6 *646:wbs_adr_i[1] *646:wbs_adr_i[2] 0.00033701
 *RES
 1 wbs_adr_i[2] *646:wbs_adr_i[2] 31.9914 
 *END
@@ -1941,36 +1946,34 @@ wbs_we_i I
 1 wbs_adr_i[9] *646:wbs_adr_i[9] 37.1802 
 *END
 
-*D_NET *575 0.00831008
+*D_NET *575 0.00762138
 *CONN
 *P wbs_cyc_i I
 *I *646:wbs_cyc_i I *D aes_example
 *CAP
-1 wbs_cyc_i 0.00175674
-2 *646:wbs_cyc_i 0.00175674
-3 *646:wbs_cyc_i *646:wbs_dat_i[0] 0.00119675
-4 *646:wbs_cyc_i *646:wbs_dat_o[0] 0.000117748
-5 *646:wbs_cyc_i *646:wbs_sel_i[0] 0.000687189
-6 *646:wbs_cyc_i *646:wbs_stb_i 0
-7 *646:wbs_ack_o *646:wbs_cyc_i 0.00279491
+1 wbs_cyc_i 0.00184182
+2 *646:wbs_cyc_i 0.00184182
+3 *646:wbs_cyc_i *646:wbs_dat_o[0] 0.000130685
+4 *646:wbs_cyc_i *646:wbs_sel_i[0] 0.000245642
+5 *646:wbs_cyc_i *646:wbs_stb_i 0.00289375
+6 *646:wb_rst_i *646:wbs_cyc_i 0.00066768
+7 *646:wbs_ack_o *646:wbs_cyc_i 0
+8 *646:wbs_adr_i[0] *646:wbs_cyc_i 0
 *RES
 1 wbs_cyc_i *646:wbs_cyc_i 29.4691 
 *END
 
-*D_NET *576 0.00814222
+*D_NET *576 0.00842537
 *CONN
 *P wbs_dat_i[0] I
 *I *646:wbs_dat_i[0] I *D aes_example
 *CAP
-1 wbs_dat_i[0] 0.00201235
-2 *646:wbs_dat_i[0] 0.00201235
-3 *646:wbs_dat_i[0] *646:wbs_dat_i[1] 0.000123163
-4 *646:wbs_dat_i[0] *646:wbs_dat_o[0] 0
-5 *646:wbs_dat_i[0] *646:wbs_dat_o[1] 0.000173071
-6 *646:wbs_dat_i[0] *646:wbs_sel_i[1] 0.00020424
-7 *646:wbs_adr_i[1] *646:wbs_dat_i[0] 0.00236231
-8 *646:wbs_adr_i[2] *646:wbs_dat_i[0] 5.7986e-05
-9 *646:wbs_cyc_i *646:wbs_dat_i[0] 0.00119675
+1 wbs_dat_i[0] 0.0021305
+2 *646:wbs_dat_i[0] 0.0021305
+3 *646:wbs_dat_i[0] *646:wbs_sel_i[0] 0.00154176
+4 *646:wbs_dat_i[0] *646:wbs_we_i 0.00262261
+5 *646:wb_rst_i *646:wbs_dat_i[0] 0
+6 *646:wbs_ack_o *646:wbs_dat_i[0] 0
 *RES
 1 wbs_dat_i[0] *646:wbs_dat_i[0] 30.4059 
 *END
@@ -2173,8 +2176,8 @@ wbs_we_i I
 4 *646:wbs_dat_i[1] *646:wbs_dat_o[0] 0.00249239
 5 *646:wbs_dat_i[1] *646:wbs_dat_o[1] 0.00408281
 6 *646:wbs_dat_i[1] *646:wbs_sel_i[0] 0
-7 *646:wbs_adr_i[3] *646:wbs_dat_i[1] 0
-8 *646:wbs_dat_i[0] *646:wbs_dat_i[1] 0.000123163
+7 *646:wbs_adr_i[0] *646:wbs_dat_i[1] 0.000123163
+8 *646:wbs_adr_i[3] *646:wbs_dat_i[1] 0
 *RES
 1 wbs_dat_i[1] *646:wbs_dat_i[1] 31.2707 
 *END
@@ -2571,18 +2574,18 @@ wbs_we_i I
 3 *607:9 *646:wbs_dat_i[9] 19.5536 
 *END
 
-*D_NET *608 0.00771111
+*D_NET *608 0.00768087
 *CONN
 *P wbs_dat_o[0] O
 *I *646:wbs_dat_o[0] I *D aes_example
 *CAP
-1 wbs_dat_o[0] 0.00245492
-2 *646:wbs_dat_o[0] 0.00245492
+1 wbs_dat_o[0] 0.00247487
+2 *646:wbs_dat_o[0] 0.00247487
 3 *646:wbs_dat_o[0] *646:wbs_sel_i[0] 0
-4 *646:wbs_dat_o[0] *646:wbs_stb_i 0.000191134
+4 *646:wbs_dat_o[0] *646:wbs_stb_i 0.000108046
 5 *646:wbs_ack_o *646:wbs_dat_o[0] 0
-6 *646:wbs_cyc_i *646:wbs_dat_o[0] 0.000117748
-7 *646:wbs_dat_i[0] *646:wbs_dat_o[0] 0
+6 *646:wbs_adr_i[0] *646:wbs_dat_o[0] 0
+7 *646:wbs_cyc_i *646:wbs_dat_o[0] 0.000130685
 8 *646:wbs_dat_i[1] *646:wbs_dat_o[0] 0.00249239
 *RES
 1 wbs_dat_o[0] *646:wbs_dat_o[0] 30.6221 
@@ -2814,18 +2817,19 @@ wbs_we_i I
 1 wbs_dat_o[19] *646:wbs_dat_o[19] 44.4589 
 *END
 
-*D_NET *619 0.01227
+*D_NET *619 0.0122674
 *CONN
 *P wbs_dat_o[1] O
 *I *646:wbs_dat_o[1] I *D aes_example
 *CAP
-1 wbs_dat_o[1] 0.00183351
-2 *646:wbs_dat_o[1] 0.00183351
+1 wbs_dat_o[1] 0.00184048
+2 *646:wbs_dat_o[1] 0.00184048
 3 *646:wbs_dat_o[1] *646:wbs_dat_o[3] 0.000130538
-4 *646:wbs_dat_o[1] *646:wbs_sel_i[1] 0.00421655
-5 *646:wbs_adr_i[3] *646:wbs_dat_o[1] 0
-6 *646:wbs_dat_i[0] *646:wbs_dat_o[1] 0.000173071
-7 *646:wbs_dat_i[1] *646:wbs_dat_o[1] 0.00408281
+4 *646:wbs_dat_o[1] *646:wbs_sel_i[1] 0.00422003
+5 *646:wbs_adr_i[0] *646:wbs_dat_o[1] 0.000111405
+6 *646:wbs_adr_i[1] *646:wbs_dat_o[1] 4.16907e-05
+7 *646:wbs_adr_i[3] *646:wbs_dat_o[1] 0
+8 *646:wbs_dat_i[1] *646:wbs_dat_o[1] 0.00408281
 *RES
 1 wbs_dat_o[1] *646:wbs_dat_o[1] 31.4869 
 *END
@@ -3197,33 +3201,33 @@ wbs_we_i I
 3 *639:9 *646:wbs_dat_o[9] 7.08929 
 *END
 
-*D_NET *640 0.00748836
+*D_NET *640 0.00741479
 *CONN
 *P wbs_sel_i[0] I
 *I *646:wbs_sel_i[0] I *D aes_example
 *CAP
-1 wbs_sel_i[0] 0.00282339
-2 *646:wbs_sel_i[0] 0.00282339
-3 *646:wbs_adr_i[0] *646:wbs_sel_i[0] 0.00115438
-4 *646:wbs_cyc_i *646:wbs_sel_i[0] 0.000687189
+1 wbs_sel_i[0] 0.0028137
+2 *646:wbs_sel_i[0] 0.0028137
+3 *646:wbs_cyc_i *646:wbs_sel_i[0] 0.000245642
+4 *646:wbs_dat_i[0] *646:wbs_sel_i[0] 0.00154176
 5 *646:wbs_dat_i[1] *646:wbs_sel_i[0] 0
 6 *646:wbs_dat_o[0] *646:wbs_sel_i[0] 0
 *RES
 1 wbs_sel_i[0] *646:wbs_sel_i[0] 31.9793 
 *END
 
-*D_NET *641 0.0122892
+*D_NET *641 0.012224
 *CONN
 *P wbs_sel_i[1] I
 *I *646:wbs_sel_i[1] I *D aes_example
 *CAP
-1 wbs_sel_i[1] 0.00172555
-2 *646:wbs_sel_i[1] 0.00172555
+1 wbs_sel_i[1] 0.00171566
+2 *646:wbs_sel_i[1] 0.00171566
 3 *646:wbs_sel_i[1] *646:wbs_sel_i[3] 0.000262217
-4 *646:wbs_adr_i[1] *646:wbs_sel_i[1] 4.06573e-06
-5 *646:wbs_adr_i[2] *646:wbs_sel_i[1] 0.000651552
-6 *646:wbs_dat_i[0] *646:wbs_sel_i[1] 0.00020424
-7 *646:wbs_dat_o[1] *646:wbs_sel_i[1] 0.00421655
+4 *646:wbs_adr_i[0] *646:wbs_sel_i[1] 0
+5 *646:wbs_adr_i[1] *646:wbs_sel_i[1] 0.000159464
+6 *646:wbs_adr_i[2] *646:wbs_sel_i[1] 0.000651552
+7 *646:wbs_dat_o[1] *646:wbs_sel_i[1] 0.00422003
 8 *646:wbs_dat_o[2] *646:wbs_sel_i[1] 0.00321856
 9 *646:wbs_dat_o[3] *646:wbs_sel_i[1] 0.000280872
 *RES
@@ -3266,31 +3270,29 @@ wbs_we_i I
 1 wbs_sel_i[3] *646:wbs_sel_i[3] 33.5769 
 *END
 
-*D_NET *644 0.00760112
+*D_NET *644 0.00937307
 *CONN
 *P wbs_stb_i I
 *I *646:wbs_stb_i I *D aes_example
 *CAP
-1 wbs_stb_i 0.00203157
-2 *646:wbs_stb_i 0.00203157
+1 wbs_stb_i 0.00167164
+2 *646:wbs_stb_i 0.00167164
 3 *646:wbs_stb_i *646:wbs_we_i 0.00302801
-4 *646:wb_rst_i *646:wbs_stb_i 0.000318838
-5 *646:wbs_ack_o *646:wbs_stb_i 0
-6 *646:wbs_cyc_i *646:wbs_stb_i 0
-7 *646:wbs_dat_o[0] *646:wbs_stb_i 0.000191134
+4 *646:wbs_cyc_i *646:wbs_stb_i 0.00289375
+5 *646:wbs_dat_o[0] *646:wbs_stb_i 0.000108046
 *RES
 1 wbs_stb_i *646:wbs_stb_i 29.6853 
 *END
 
-*D_NET *645 0.00972473
+*D_NET *645 0.00938289
 *CONN
 *P wbs_we_i I
 *I *646:wbs_we_i I *D aes_example
 *CAP
-1 wbs_we_i 0.00168787
-2 *646:wbs_we_i 0.00168787
-3 *646:wb_clk_i *646:wbs_we_i 0.000152523
-4 *646:wbs_adr_i[0] *646:wbs_we_i 0.00316846
+1 wbs_we_i 0.00179217
+2 *646:wbs_we_i 0.00179217
+3 *646:wb_clk_i *646:wbs_we_i 0.000147929
+4 *646:wbs_dat_i[0] *646:wbs_we_i 0.00262261
 5 *646:wbs_stb_i *646:wbs_we_i 0.00302801
 *RES
 1 wbs_we_i *646:wbs_we_i 29.9015 

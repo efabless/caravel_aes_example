@@ -1,6 +1,6 @@
 ###############################################################################
 # Created by write_sdc
-# Mon Jun  5 21:49:37 2023
+# Wed Jun  7 14:09:06 2023
 ###############################################################################
 current_design user_project_wrapper
 ###############################################################################
@@ -524,7 +524,7 @@ set_input_delay 0.5000 -clock [get_clocks {clk}] -min -add_delay [get_ports {la_
 set_input_delay 6.0000 -clock [get_clocks {clk}] -max -add_delay [get_ports {la_oenb[99]}]
 set_input_delay 0.5000 -clock [get_clocks {clk}] -min -add_delay [get_ports {la_oenb[9]}]
 set_input_delay 6.0000 -clock [get_clocks {clk}] -max -add_delay [get_ports {la_oenb[9]}]
-set_input_delay 1.9000 -clock [get_clocks {clk}] -min -add_delay [get_ports {wb_rst_i}]
+set_input_delay 3.0000 -clock [get_clocks {clk}] -min -add_delay [get_ports {wb_rst_i}]
 set_input_delay 6.0000 -clock [get_clocks {clk}] -max -add_delay [get_ports {wb_rst_i}]
 set_input_delay 0.5000 -clock [get_clocks {clk}] -min -add_delay [get_ports {wbs_adr_i[10]}]
 set_input_delay 6.0000 -clock [get_clocks {clk}] -max -add_delay [get_ports {wbs_adr_i[10]}]
