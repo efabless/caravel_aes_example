@@ -9,7 +9,7 @@
     "ROUTING_CORES": 1,
     "CLOCK_PERIOD": 25,
     "CLOCK_PORT": "wb_clk_i",
-    "FP_PDN_MACRO_HOOKS": "mprj vccd2 vssd2 vccd2 vssd2",
+    "FP_PDN_MACRO_HOOKS": "mprj vccd2 vssd2 VPWR VGND",
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
     "VERILOG_FILES_BLACKBOX": [
         "dir::../../verilog/gl/aes_example.v"
