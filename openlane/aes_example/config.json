@@ -2,14 +2,14 @@
     "DESIGN_NAME": "aes_example",
     "DESIGN_IS_CORE": 0,
     "VERILOG_FILES": [
-        "dir::../../../aes/src/rtl/*.v",
+        "dir::../../ip/SW_AES/hdl/rtl/*.v",
         "dir::../../verilog/rtl/aes_example.v"
     ],
     "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
-    "RUN_VERILATOR": 0,
+    "RUN_LINTER": 0,
     "SYNTH_BUFFERING": 0,
-    "SYNTH_MAX_TRAN": 0.8,
-    "SYNTH_MAX_FANOUT": 16,
+    "MAX_TRANSITION_CONSTRAINT": 0.8,
+    "MAX_FANOUT_CONSTRAINT": 16,
     "CLOCK_PERIOD": 25,
     "CLOCK_PORT": "wb_clk_i",
     "FP_SIZING": "absolute",
